@@ -38,6 +38,7 @@ ALLOWED_HOSTS = env.list("ALLOWED_HOSTS",
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.home',
     'apps.accounts',
     'apps.dashboard',
     'django.contrib.admin',

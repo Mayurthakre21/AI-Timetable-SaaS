@@ -1,0 +1,281 @@
+/* ===========================
+   GOOGLE FONTS
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container-custom{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding-left:20px;
+
+    padding-right:20px;
+
+}
+
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+
+/* ===========================
+   IMAGES
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+h1,h2,h3,h4,h5{
+
+    font-family:'Playfair Display',serif;
+
+    color:var(--text);
+
+}
+
+h1{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    font-size:1.5rem;
+
+}
+
+
+/* ===========================
+   PARAGRAPHS
+=========================== */
+
+p{
+
+    color:var(--muted);
+
+    font-size:1.05rem;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn-primary-custom{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    border-radius:var(--radius-lg);
+
+    padding:15px 32px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.btn-primary-custom:hover{
+
+    background:var(--primary-light);
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+
+.btn-secondary-custom{
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    padding:15px 32px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary-custom:hover{
+
+    box-shadow:var(--shadow-md);
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ===========================
+   CARDS
+=========================== */
+
+.card-custom{
+
+    background:white;
+
+    border-radius:var(--radius-xl);
+
+    padding:30px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+
+}
+
+.card-custom:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+
+/* ===========================
+   SECTION
+=========================== */
+
+.section{
+
+    padding:90px 0;
+
+}
+
+
+/* ===========================
+   TEXT UTILITIES
+=========================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-muted{
+
+    color:var(--muted);
+
+}
+
+.highlight{
+
+    color:var(--primary);
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    h1{
+
+        font-size:3rem;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    h1{
+
+        font-size:2.4rem;
+
+    }
+
+    h2{
+
+        font-size:2rem;
+
+    }
+
+}

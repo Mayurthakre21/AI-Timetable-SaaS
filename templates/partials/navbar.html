@@ -1,0 +1,63 @@
+<nav class="navbar-custom">
+
+    <div class="navbar-container">
+
+        <a href="/" class="logo">
+
+            Planify<span>AI</span>
+
+        </a>
+
+        <div class="nav-links">
+
+            <a href="/">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#how-it-works">How It Works</a>
+
+            <a href="#pricing">Pricing</a>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            {% if user.is_authenticated %}
+
+                <a class="btn-login"
+                   href="/dashboard/">
+
+                    Dashboard
+
+                </a>
+
+                <a class="btn-start"
+                   href="{% url 'accounts:logout' %}">
+
+                    Logout
+
+                </a>
+
+            {% else %}
+
+                <a class="btn-login"
+                   href="{% url 'accounts:login' %}">
+
+                    Login
+
+                </a>
+
+                <a class="btn-start"
+                   href="{% url 'accounts:register' %}">
+
+                    Get Started
+
+                </a>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</nav>

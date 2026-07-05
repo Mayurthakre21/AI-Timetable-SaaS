@@ -1,0 +1,980 @@
+{% extends "base.html" %}
+
+{% block title %}
+Planify AI
+{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+
+
+
+<div class="hero-container">
+
+<div>
+
+<div class="hero-badge">
+
+✨ AI Powered Personal Planning
+
+</div>
+
+<h1>
+
+Plan your future,
+
+<span class="highlight">
+
+one goal at a time.
+
+</span>
+
+</h1>
+
+<p>
+
+Generate personalized study schedules,
+career roadmaps,
+interview preparation plans,
+fitness routines,
+and productivity systems—
+all powered by Artificial Intelligence.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="{% url 'accounts:register' %}"
+
+class="btn-primary-custom">
+
+Start Free
+
+</a>
+
+<a href="#features"
+
+class="btn-secondary-custom">
+
+Explore Features
+
+</a>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="hero-stat">
+
+<h3>Unlimited</h3>
+
+<span>Goals</span>
+
+</div>
+
+<div class="hero-stat">
+
+<h3>AI</h3>
+
+<span>Powered</span>
+
+</div>
+
+<div class="hero-stat">
+
+<h3>24/7</h3>
+
+<span>Planning</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<div class="dashboard-preview">
+
+<div class="preview-header">
+
+<h3>
+
+Dashboard Preview
+
+</h3>
+
+<span>
+
+Today
+
+</span>
+
+</div>
+
+<div class="preview-card">
+
+<h4>
+
+Current Goal
+
+</h4>
+
+<p>
+
+Learn Django
+
+</p>
+
+<div class="progress">
+
+<div class="progress-fill"></div>
+
+</div>
+
+</div>
+
+<div class="preview-card">
+
+<h4>
+
+Today's Tasks
+
+</h4>
+
+<div class="task">
+
+<span>Models & ORM</span>
+
+<span class="completed">✓</span>
+
+</div>
+
+<div class="task">
+
+<span>Authentication</span>
+
+<span class="completed">✓</span>
+
+</div>
+
+<div class="task">
+
+<span>Landing Page</span>
+
+<span class="pending">⏳</span>
+
+</div>
+
+<div class="task">
+
+<span>Deployment</span>
+
+<span class="pending">⏳</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="features" class="features">
+
+<div class="container-custom">
+
+<div class="section-header">
+
+<h2>
+
+Everything you need to stay productive
+
+</h2>
+
+<p>
+
+Planify AI combines Artificial Intelligence,
+goal management,
+progress tracking,
+and smart scheduling into one beautiful platform.
+
+</p>
+
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-stars"></i>
+
+</div>
+
+<h3>
+
+AI Planning
+
+</h3>
+
+<p>
+
+Generate personalized study schedules
+and productivity plans instantly.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-bullseye"></i>
+
+</div>
+
+<h3>
+
+Goal Management
+
+</h3>
+
+<p>
+
+Manage multiple goals including
+GATE,
+placements,
+fitness,
+or personal learning.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-calendar-check"></i>
+
+</div>
+
+<h3>
+
+Smart Calendar
+
+</h3>
+
+<p>
+
+Automatically distribute tasks
+based on available time
+and deadlines.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-bar-chart"></i>
+
+</div>
+
+<h3>
+
+Analytics
+
+</h3>
+
+<p>
+
+Track completion,
+study hours,
+and consistency with
+beautiful insights.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-lightning-charge"></i>
+
+</div>
+
+<h3>
+
+Adaptive Scheduling
+
+</h3>
+
+<p>
+
+Missed today's tasks?
+
+Regenerate tomorrow automatically.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="bi bi-cloud-check"></i>
+</div>
+
+<h3>
+
+Cloud Sync
+
+</h3>
+
+<p>
+
+Your timetable is securely
+stored and available
+from anywhere.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="how-it-works" class="how-it-works">
+
+<div class="container-custom">
+
+<div class="section-header">
+
+<h2>
+
+How Planify AI Works
+
+</h2>
+
+<p>
+
+Creating your personalized AI timetable
+takes less than one minute.
+
+</p>
+
+</div>
+
+<div class="steps-grid">
+
+<div class="step-card">
+
+<div class="step-number">
+
+1
+
+</div>
+
+<h3>
+
+Create Account
+
+</h3>
+
+<p>
+
+Sign up securely
+using your email
+and start your planning journey.
+
+</p>
+
+</div>
+
+<div class="step-card">
+
+<div class="step-number">
+
+2
+
+</div>
+
+<h3>
+
+Create Your Goal
+
+</h3>
+
+<p>
+
+Choose your goal like
+GATE,
+Placements,
+Fitness,
+or Learning.
+
+</p>
+
+</div>
+
+<div class="step-card">
+
+<div class="step-number">
+
+3
+
+</div>
+
+<h3>
+
+Generate Plan
+
+</h3>
+
+<p>
+
+Our AI analyzes your
+available time
+and builds a personalized schedule.
+
+</p>
+
+</div>
+
+<div class="step-card">
+
+<div class="step-number">
+
+4
+
+</div>
+
+<h3>
+
+Track Progress
+
+</h3>
+
+<p>
+
+Stay consistent,
+track daily progress,
+and improve every week.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="dashboard-section">
+
+<div class="container-custom">
+
+<div class="dashboard-wrapper">
+
+<div>
+
+<span class="hero-badge">
+
+Dashboard Preview
+
+</span>
+
+<h2>
+
+Everything you need
+
+to stay organized.
+
+</h2>
+
+<p>
+
+Planify AI gives you one beautiful dashboard to
+manage goals,
+track progress,
+view schedules,
+and monitor productivity.
+
+</p>
+
+<a href="{% url 'accounts:register' %}"
+
+class="btn-primary-custom">
+
+Start Planning
+
+</a>
+
+</div>
+
+<div class="dashboard-card">
+
+<div class="dashboard-header">
+
+<h3>
+
+Welcome Back 👋
+
+</h3>
+
+<p>
+
+Today's Progress
+
+78%
+
+</p>
+
+</div>
+
+<div class="dashboard-body">
+
+<div class="dashboard-grid">
+
+<div class="dashboard-widget">
+
+<h5>
+
+Current Goal
+
+</h5>
+
+<p>
+
+Learn Django
+
+</p>
+
+<div class="progress-large">
+
+<span></span>
+
+</div>
+
+</div>
+
+<div class="dashboard-widget">
+
+<h5>
+
+Today's Tasks
+
+</h5>
+
+<div class="task-row">
+
+<span>
+
+Models
+
+</span>
+
+<span>
+
+✅
+
+</span>
+
+</div>
+
+<div class="task-row">
+
+<span>
+
+Authentication
+
+</span>
+
+<span>
+
+✅
+
+</span>
+
+</div>
+
+<div class="task-row">
+
+<span>
+
+Landing Page
+
+</span>
+
+<span>
+
+⏳
+
+</span>
+
+</div>
+
+</div>
+
+<div class="dashboard-widget">
+
+<h5>
+
+Weekly Calendar
+
+</h5>
+
+<div class="calendar">
+
+<div>M</div>
+
+<div>T</div>
+
+<div class="active-day">W</div>
+
+<div>T</div>
+
+<div>F</div>
+
+<div>S</div>
+
+<div>S</div>
+
+</div>
+
+</div>
+
+<div class="dashboard-widget">
+
+<h5>
+
+Statistics
+
+</h5>
+
+<p>
+
+✔ Goals
+
+4
+
+</p>
+
+<p>
+
+✔ Study Hours
+
+34
+
+</p>
+
+<p>
+
+✔ Completion
+
+84%
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="testimonials">
+
+<div class="container-custom">
+
+<div class="section-header">
+
+<h2>
+
+Loved by Future Achievers
+
+</h2>
+
+<p>
+
+Built for students, professionals, and lifelong learners.
+
+</p>
+
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<div class="avatar">
+
+👨
+
+</div>
+
+<h3>
+
+Student
+
+</h3>
+
+<p>
+
+Planify AI helped me organize my preparation without feeling overwhelmed.
+
+</p>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="avatar">
+
+👩
+
+</div>
+
+<h3>
+
+Developer
+
+</h3>
+
+<p>
+
+Finally a planner that adapts to my schedule instead of forcing one.
+
+</p>
+
+</div>
+
+<div class="testimonial-card">
+
+<div class="avatar">
+
+🎓
+
+</div>
+
+<h3>
+
+Job Seeker
+
+</h3>
+
+<p>
+
+Preparing for interviews became much easier with structured daily goals.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="pricing" class="pricing">
+
+<div class="container-custom">
+
+<div class="section-header">
+
+<h2>
+
+Simple Pricing
+
+</h2>
+
+<p>
+
+Start free and upgrade when you need more.
+
+</p>
+
+</div>
+
+<div class="pricing-grid">
+
+<div class="price-card">
+
+<h3>
+
+Free
+
+</h3>
+
+<div class="price">
+
+₹0
+
+</div>
+
+<ul>
+
+<li>✔ Unlimited Goals</li>
+
+<li>✔ Dashboard</li>
+
+<li>✔ Basic AI</li>
+
+</ul>
+
+<a href="{% url 'accounts:register' %}"
+
+class="btn-primary-custom">
+
+Start Free
+
+</a>
+
+</div>
+
+<div class="price-card featured">
+
+<h3>
+
+Pro
+
+</h3>
+
+<div class="price">
+
+Coming Soon
+
+</div>
+
+<ul>
+
+<li>Unlimited AI</li>
+
+<li>Analytics</li>
+
+<li>Calendar Sync</li>
+
+<li>PDF Export</li>
+
+</ul>
+
+</div>
+
+<div class="price-card">
+
+<h3>
+
+Enterprise
+
+</h3>
+
+<div class="price">
+
+Soon
+
+</div>
+
+<ul>
+
+<li>Teams</li>
+
+<li>API</li>
+
+<li>Priority Support</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section class="faq">
+
+<div class="container-custom">
+
+<div class="section-header">
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Is Planify AI free?
+
+</h3>
+
+<p>
+
+Yes. You can start using Planify AI completely free.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Can I create multiple goals?
+
+</h3>
+
+<p>
+
+Yes. You can manage multiple learning, fitness, or career goals simultaneously.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>
+
+Does AI regenerate my timetable?
+
+</h3>
+
+<p>
+
+Yes. If your schedule changes, AI can generate a new personalized plan.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+{% endblock %}

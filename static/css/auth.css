@@ -1,0 +1,153 @@
+/* ===========================
+   AUTH PAGES
+=========================== */
+
+.auth-section{
+
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+.auth-card{
+
+    width:100%;
+
+    max-width:520px;
+
+    background:white;
+
+    border-radius:28px;
+
+    padding:45px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.auth-logo{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+.auth-logo h2{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.auth-title{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.auth-subtitle{
+
+    text-align:center;
+
+    color:var(--muted);
+
+    margin-bottom:35px;
+
+}
+
+.form-group{
+
+    margin-bottom:22px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.form-control{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    transition:.3s;
+
+    font-size:15px;
+
+}
+
+.form-control:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 3px rgba(79,70,229,.15);
+
+}
+
+.auth-button{
+
+    width:100%;
+
+    margin-top:15px;
+
+}
+
+.auth-footer{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.auth-footer a{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.errorlist{
+
+    list-style:none;
+
+    color:#dc3545;
+
+    padding-left:0;
+
+    margin-top:5px;
+
+    font-size:14px;
+
+}
+
+.helptext{
+
+    display:none;
+
+}

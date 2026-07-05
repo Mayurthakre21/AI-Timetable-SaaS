@@ -1,0 +1,51 @@
+/* ===========================
+   PLANIFY AI DESIGN SYSTEM
+=========================== */
+
+:root {
+
+    /* Primary Colors */
+    --primary: #4F46E5;
+    --primary-light: #6366F1;
+    --secondary: #7C3AED;
+
+    /* Background */
+    --background: #F8F5EF;
+    --surface: #FFFFFF;
+
+    /* Text */
+    --text: #111827;
+    --muted: #6B7280;
+
+    /* Borders */
+    --border: #E5E7EB;
+
+    /* Success */
+    --success: #22C55E;
+
+    /* Warning */
+    --warning: #F59E0B;
+
+    /* Danger */
+    --danger: #EF4444;
+
+    /* Dark Section */
+    --dark: #111827;
+
+    /* Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 24px;
+
+    /* Shadow */
+    --shadow-sm: 0 2px 8px rgba(0,0,0,.05);
+    --shadow-md: 0 8px 20px rgba(0,0,0,.08);
+    --shadow-lg: 0 15px 40px rgba(0,0,0,.12);
+
+    /* Container */
+    --container-width: 1200px;
+
+    /* Transition */
+    --transition: .3s ease;
+}
