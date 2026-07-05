@@ -1,21 +1,84 @@
 {% extends "base.html" %}
 
 {% block title %}
-Login
+Login | Planify AI
 {% endblock %}
 
 {% block content %}
 
-<h2>Login</h2>
+<section class="auth-section">
 
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+    <div class="auth-card">
 
-    <button class="btn btn-primary">
-        Login
-    </button>
+        <div class="auth-logo">
+            <h2>Planify AI</h2>
+        </div>
 
-</form>
+        <h3 class="auth-title">
+            Welcome Back 👋
+        </h3>
+
+        <p class="auth-subtitle">
+            Sign in to continue your planning journey.
+        </p>
+
+        <form method="post" novalidate>
+
+            {% csrf_token %}
+
+            {% if form.non_field_errors %}
+
+                <div class="alert alert-danger">
+
+                    {{ form.non_field_errors }}
+
+                </div>
+
+            {% endif %}
+
+            <div class="form-group">
+
+                <label>Username</label>
+
+                {{ form.username }}
+
+                {{ form.username.errors }}
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Password</label>
+
+                {{ form.password }}
+
+                {{ form.password.errors }}
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn-primary-custom auth-button">
+
+                Login
+
+            </button>
+
+        </form>
+        <div class="auth-footer">
+
+            Don't have an account?
+
+            <a href="{% url 'accounts:register' %}">
+
+                Create Account
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 {% endblock %}

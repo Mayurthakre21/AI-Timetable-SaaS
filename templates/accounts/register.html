@@ -1,27 +1,101 @@
 {% extends "base.html" %}
 
 {% block title %}
-
-Register
-
+Create Account | Planify AI
 {% endblock %}
 
 {% block content %}
 
-<h2>Create Account</h2>
+<section class="auth-section">
 
-<form method="post">
+    <div class="auth-card">
 
-    {% csrf_token %}
+        <div class="auth-logo">
+            <h2>Planify AI</h2>
+        </div>
 
-    {{ form.as_p }}
+        <h3 class="auth-title">
+            Create Your Account 🚀
+        </h3>
 
-    <button class="btn btn-primary">
+        <p class="auth-subtitle">
+            Start building personalized plans powered by AI.
+        </p>
 
-        Register
+        <form method="post" novalidate>
 
-    </button>
+            {% csrf_token %}
 
-</form>
+            {% if form.non_field_errors %}
+                <div class="alert alert-danger">
+                    {{ form.non_field_errors }}
+                </div>
+            {% endif %}
+
+            <div class="form-group">
+
+                <label>Username</label>
+
+                {{ form.username }}
+
+                {{ form.username.errors }}
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Email</label>
+
+                {{ form.email }}
+
+                {{ form.email.errors }}
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Password</label>
+
+                {{ form.password1 }}
+
+                {{ form.password1.errors }}
+
+            </div>
+
+            <div class="form-group">
+
+                <label>Confirm Password</label>
+
+                {{ form.password2 }}
+
+                {{ form.password2.errors }}
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn-primary-custom auth-button">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <div class="auth-footer">
+
+            Already have an account?
+
+            <a href="{% url 'accounts:login' %}">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
 {% endblock %}
